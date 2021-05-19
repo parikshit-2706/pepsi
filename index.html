@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pepsi</title>
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="CSS/styles.css">
+
+
+  </head>
+  <body>
+      <section class="sec">
+        <header>
+          <a href="#">  <img src="images/logo.png" alt=""  class="logo">  </a>
+
+          <ul>
+              <li> <a href="#">Home            </a>  </li>
+              <li> <a href="#">Products        </a>  </li>
+              <li> <a href="#">What's New      </a>  </li>
+              <li> <a href="#">News Letter    </a>  </li>
+              <li> <a href="#">Contact         </a>  </li>
+
+
+          </ul>
+
+
+        </header>
+      <div class="content">
+
+
+        <div class="text-box">
+          <h2>That's What <br /><span>I LIKE</span></h2>
+          <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
+             It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin professor
+              at Hampden-Sydney College in Virginia,
+             looked up one of the more obscure Latin words,</p>
+          <a href="#">View All Products</a>
+        </div>
+        <div class="imgBox">
+          <img src="images/pepsi001.png" alt="" class="pepsi">
+
+        </div>
+      </div>
+      <ul class="thumb">
+        <li> <img src="images/pepsi001.png" alt=""  onclick="imgSlider('images/pepsi001.png'); changeBgcolor('#0062be')">  </li>
+          <li> <img src="images/pepsi002.png" alt="" onclick="imgSlider('images/pepsi002.png'); changeBgcolor('#e60c2c')   ">  </li>
+            <li> <img src="images/pepsi003.png" alt="" onclick="imgSlider('images/pepsi003.png'); changeBgcolor('#1e1e1e') ">  </li>
+      </ul>
+      <ul class="sci">
+        <li>  <a href="#"> <img src="images/facebook.png" alt=""> </a> </li>
+          <li>  <a href="#"> <img src="images/instagram.png" alt=""> </a> </li>
+            <li>  <a href="#"> <img src="images/twitter.png" alt=""> </a> </li>
+
+      </ul>
+      </section>
+      <script type="text/javascript">
+        function imgSlider(anything){
+          document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgcolor(color)
+        {
+          const sec = document.querySelector('.sec');
+          sec.style.background= color;
+        }
+
+      </script>
+
+
+
+
+
+  </body>
+</html>
